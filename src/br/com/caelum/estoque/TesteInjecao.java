@@ -15,6 +15,12 @@ public class TesteInjecao {
 		GerenciadorDeProduto gerenciador = context.getBean(
 				"gerenciadorProduto", GerenciadorDeProduto.class);
 
+		
+		GerenciadorDeProduto gerenciador2 = context.getBean(
+				"gerenciadorProduto", GerenciadorDeProduto.class);
+		
+		System.out.println(gerenciador == gerenciador2);
+		
 		// cria um Produto como se o usuário tivesse preenchido um formulário
 		Produto produto = new Produto();
 		produto.setDescricao("Livro Spring in Action");
