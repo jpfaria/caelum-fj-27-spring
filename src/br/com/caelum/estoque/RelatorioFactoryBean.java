@@ -6,9 +6,7 @@ import org.springframework.beans.factory.FactoryBean;
 public class RelatorioFactoryBean implements FactoryBean {
 
 	public Object getObject() throws Exception {
-
 		return Relatorio.comResumo("Relatorio de progresso");
-
 	}
 
 	public Class getObjectType() {
